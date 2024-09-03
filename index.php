@@ -1,3 +1,7 @@
+<?php
+$global_path = get_template_directory_uri() . '/';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +34,7 @@
 				<h1 class="">Top Songs</h1>
 				<h3>Pick up your music right where you left off..</h3>
 				<!-- <a class="green_btn" role="button" href="https://spotify-clone-oguz3.web.app/">Play music</a> -->
-				<a class="green_btn" role="button" href="Spotify-songs/songs.html">Play music</a>
+				<a class="green_btn" role="button" href="<?= $global_path ?>Spotify-songs/songs.html">Play music</a>
 			</span>
 			<span class="home_cards">
 				<div class="hm_card opacity_anim">
@@ -39,7 +43,7 @@
 					</div>
 					<div class="box_details">
 						<div class="play-icon">
-							<a href="Spotify-songs/songs.html">
+							<a href="<?= $global_path ?>Spotify-songs/songs.html">
 								<svg id="album-play" viewBox="0 0 25.4 25.4">
 									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
 									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
@@ -57,7 +61,7 @@
 					</div>
 					<div class="box_details">
 						<div class="play-icon">
-							<a href="Spotify-songs/songs.html">
+							<a href="<?= $global_path ?>Spotify-songs/songs.html">
 								<svg id="album-play" viewBox="0 0 25.4 25.4">
 									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
 									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
@@ -75,7 +79,7 @@
 					</div>
 					<div class="box_details">
 						<div class="play-icon">
-							<a href="Spotify-songs/songs.html#8">
+							<a href="<?= $global_path ?>Spotify-songs/songs.html#8">
 								<svg id="album-play" viewBox="0 0 25.4 25.4">
 									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
 									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
@@ -165,7 +169,7 @@
 						<span class="txt">
 							<h5>MOST LISTENED ARTIST</h5>
 							<h2>Taylor Swift</h2>
-							<a href="Spotify-songs/songs.html">PLAY NOW</a>
+							<a href="<?= $global_path ?>Spotify-songs/songs.html">PLAY NOW</a>
 						</span>
 						<span class="img">
 							<img src="./assets/b2.png" alt="">
@@ -178,7 +182,7 @@
 						<span class="txt">
 							<h5>Trending New</h5>
 							<h2>Animal - Live</h2>
-							<a href="Spotify-songs/songs.html">PLAY NOW</a>
+							<a href="<?= $global_path ?>Spotify-songs/songs.html">PLAY NOW</a>
 						</span>
 						<span class="img">
 							<img src="./assets/b9.jpg" alt="">
