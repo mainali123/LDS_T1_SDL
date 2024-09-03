@@ -1,0 +1,13 @@
+/* 
+    Theme Name: Custom Theme
+    Description: Task of the LDS
+    Author: Diwash Mainali 
+    Version: 1.0
+*/
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
