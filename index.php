@@ -1,231 +1,101 @@
 <?php
-$global_path = get_template_directory_uri() . '/';
-?>
+$dm_baseurl = get_template_directory_uri() . '/';
+//?>
+
 
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- <link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./css/fonts.css" />
-		<link rel="stylesheet" href="./css/animation.css">
-		<link rel="stylesheet" href="./css/responsive.css"> -->
-	<title>Listening is everything - Spotify</title>
-	<link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-		rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co"/>
+    <meta name="keywords"
+          content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"/>
+    <meta name="author" content="FreeHTML5.co"/>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
-
 <body>
-	<!--Header-->
-	<custom-header></custom-header>
-	<!--Header-->
 
-	<div class="home_main">
-		<div class="hm_gradient-1"></div>
-		<div class="hm_gradient-2"></div>
-		<div class="container hm_cont">
-			<span class="home_text">
-				<!-- <small>Recently Songs</small> -->
-				<h1 class="">Top Songs</h1>
-				<h3>Pick up your music right where you left off..</h3>
-				<!-- <a class="green_btn" role="button" href="https://spotify-clone-oguz3.web.app/">Play music</a> -->
-				<a class="green_btn" role="button" href="<?= $global_path ?>Spotify-songs/songs.html">Play music</a>
-			</span>
-			<span class="home_cards">
-				<div class="hm_card opacity_anim">
-					<div class="box">
-						<img src="./assets/b3.jpg" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="<?= $global_path ?>Spotify-songs/songs.html">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2>Ed sheeran</h2>
-					</div>
-				</div>
-				<div class="hm_card opacity_anim-1d">
-					<div class="box">
-						<img src="./assets/b1.jfif" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="<?= $global_path ?>Spotify-songs/songs.html">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2> Top Songs 2023</h2>
-					</div>
-				</div>
-				<div class="hm_card opacity_anim-2d">
-					<div class="box">
-						<img src="./assets/b5.jfif" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="<?= $global_path ?>Spotify-songs/songs.html#8">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2>Telugu songs</h2>
-					</div>
-				</div>
-				<div class="hm_card opacity_anim">
-					<div class="box">
-						<img src="./assets/b8.jfif" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="https://open.spotify.com/album/1zRi3hQRS6HAUCf84qMnN8">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2>India Rock</h2>
-					</div>
-				</div>
-				<div class="hm_card opacity_anim-1d">
-					<div class="box">
-						<img src="./assets/b7.webp" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2>Dua Lipa</h2>
-					</div>
-				</div>
-				<div class="hm_card opacity_anim-2d">
-					<div class="box">
-						<img src="./assets/b4.jfif" alt="">
-					</div>
-					<div class="box_details">
-						<div class="play-icon">
-							<a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
-								<svg id="album-play" viewBox="0 0 25.4 25.4">
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-									<path fill="#ffffff" d="M12.7,25.4A12.7,12.7,0,1,1,25.4,12.7,12.71,12.71,0,0,1,12.7,25.4Zm0-24A11.3,11.3,0,1,0,24,12.7,11.31,11.31,0,0,0,12.7,1.4Z"></path>
-									<path fill="#ffffff" d="M11,16.47,17,13a.34.34,0,0,0,0-.59L11,8.93a.34.34,0,0,0-.51.29v7A.34.34,0,0,0,11,16.47Z"></path>
-								</svg>
-							</a>
-						</div>
-						<h2>Love Songs</h2>
-					</div>
-				</div>
-			</span>
-		</div>
-		<div class="container">
-			<div class="arrow-scroll-down slide-top">
-				<a href="#last_listen">
-					<svg id="arrow-scroll-down" viewBox="0 0 32 32">
-						<polygon fill="#ffffff" points="15.98 22.43 7.28 13.73 8.7 12.32 15.98 19.6 23.28 12.3 24.7 13.72 15.98 22.43"></polygon>
-						<path fill="#ffffff" d="M16,32A16,16,0,1,1,32,16,16,16,0,0,1,16,32ZM16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Z"></path>
-					</svg>
-				</a>
-			</div>
-		</div>
-	</div>
 
-	<div id="last_listen" class="last_listen">
-		<div class="container">
-			<h1>
-				Your latest listening trends</h1>
-			<div class="ll_row">
-				<span>
-					<div class="ll_card">
-						<span class="txt">
-							<h5>MOST LISTENED ARTIST</h5>
-							<h2>Taylor Swift</h2>
-							<a href="<?= $global_path ?>Spotify-songs/songs.html">PLAY NOW</a>
-						</span>
-						<span class="img">
-							<img src="./assets/b2.png" alt="">
-						</span>
-						<span class="bg_filt"></span>
-					</div>
-				</span>
-				<span>
-					<div class="ll_card">
-						<span class="txt">
-							<h5>Trending New</h5>
-							<h2>Animal - Live</h2>
-							<a href="<?= $global_path ?>Spotify-songs/songs.html">PLAY NOW</a>
-						</span>
-						<span class="img">
-							<img src="./assets/b9.jpg" alt="">
-						</span>
-						<span class="bg_filt"></span>
-					</div>
-				</span>
-			</div>
-		</div>
-	</div>
+<div id="fh5co-page">
+	<?php get_header(); ?>
 
-	<div class="home_links">
-		<div class="container">
-			<h1 class="title-1">Get the most from Spotify</h1>
-		</div>
-		<div class="container links">
-			<div class="account_link">
-				<h3 class="subtitle-1">Manage your account</h3>
-				<p class="parag-1">Edit your profile, change your password and update your payment informations.</p>
-				<a class="a_link" href="">MANAGE ACCOUNT</a>
-			</div>
-			<div class="app_link">
-				<h3 class="subtitle-1">Get our free app</h3>
-				<p class="parag-1">Listen to your favorite music without any problems. Download the Spotify app to your computer.</p>
-				<a class="a_link" href="">DOWNLOAD DESKTOP APP</a>
-			</div>
-			<div class="web_link">
-				<h3 class="subtitle-1">Listen on the web</h3>
-				<p class="parag-1">To play and share music inside the browser without the app <a class="a_link" href="">play.spotify.com</a> Go to.</p>
-				<a class="a_link" href="https://spotify-clone-oguz3.web.app/">play music</a>
-			</div>
-		</div>
-	</div>
+    <div class="container" id="posts-container">
 
-	<!--Footer-->
-	<custom-footer></custom-footer>
-	<!--Footer-->
+		<?php
 
-	<!-- <div id="opacity" class="opacity"></div>
-	<script src="./component/header.js"></script>
-	<script src="./component/footer.js"></script>
-	<script src="./js/main.js"></script> -->
-  <?php wp_footer(); ?>
+		//        if (function_exists( 'the_custom_logo')){
+		//            the_custom_logo();
+		//        }
+
+		//		if ( have_posts() ) {
+		//			while ( have_posts() ) {
+		//                    the_post();
+		//
+		//                    the_title();
+		//                    the_content();
+		//			}
+		//		}
+		?>
+
+        <label for="filter">Filter by Category:</label>
+        <select id="filter">
+            <option value="" disabled selected>Select a category...</option>
+			<?php
+			$categories = get_terms( array(
+				'taxonomy'   => 'category',
+				'hide_empty' => false,
+			) );
+			foreach ( $categories as $category ) {
+				echo '<option value="' . esc_attr( $category->slug ) . '">' . esc_html( $category->name ) . '</option>';
+			}
+			?>
+        </select>
+
+        <div class="blogs-container" id="blogs-container">
+			<?php
+			$args = array(
+				'post_type'      => 'blog',
+				'posts_per_page' => 3,
+				'paged'          => 1
+			);
+
+			$blog_query = new WP_Query( $args );
+
+			if ( $blog_query->have_posts() ) {
+				while ( $blog_query->have_posts() ) {
+					$blog_query->the_post();
+					?>
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<?php
+				}
+			} else {
+				echo '<p>No blog posts found.</p>';
+			}
+			wp_reset_postdata();
+			?>
+        </div>
+    </div>
+    <button id="load-more">Load More</button>
+	<?php get_footer(); ?>
+</div>
+
+<?php wp_footer(); ?>
+
 </body>
-
 </html>
+
